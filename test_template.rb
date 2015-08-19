@@ -40,28 +40,28 @@ gem 'sdoc', group: :doc
 gem_group :development, :test do
 gem 'spring'
 gem 'quiet_assets'
-	gem 'pry-rails'
-	gem 'byebug'
-	gem 'awesome_print'
-	gem 'better_errors'
-	gem 'binding_of_caller'
+  gem 'pry-rails'
+  gem 'byebug'
+  gem 'awesome_print'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 gem_group :test do
-	gem 'guard-rspec'
-	gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'rspec-rails'
 end
 
 after_bundle do
-	remove_dir 'test'
+  remove_dir 'test'
 end
 
 remove_file 'README.rdoc'
 create_file 'README.md' do <<-TEXT
-	#Markdown Stuff!
+  #Markdown Stuff!
 
-	Created with the help of Rails application templates
-	TEXT
+  Created with the help of Rails application templates
+  TEXT
 end
 
 #run 'spring stop'
