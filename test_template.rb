@@ -38,7 +38,7 @@ gem 'simple_form'
 gem 'sdoc', group: :doc
 #gem and gem_group will work from Rails Template API
 gem_group :development, :test do
-	gem 'spring'
+gem 'spring'
 	gem 'quiet_assets'
 	gem 'pry-rails'
 	gem 'byebug'
